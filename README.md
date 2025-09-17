@@ -10,7 +10,7 @@ Web ini terdiri dari:
 - Project
 - Contact
 
-## Struktur File
+## FILE STRUCTURE
 ```
 web/
 ├── index.html
