@@ -18,6 +18,7 @@ web/
 README.md
 ```
 ## DOCUMENTATION
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/796543c9-0d56-42ef-a427-020fdcc7cf34" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2ed2e842-1c93-4b79-8b1b-39cdc76d58d4" />
-<img width="1906" height="496" alt="image" src="https://github.com/user-attachments/assets/fa80c9a7-5e76-45f2-99b2-ffd1ee206663" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1b094e88-86ad-4123-b1ae-ad594ed5dea9" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6d087bfd-f41b-4a20-8c90-b95fde16ca2a" />
+<img width="1920" height="499" alt="image" src="https://github.com/user-attachments/assets/39ba303e-5e76-4ba6-9cd1-7b16ffe7bc6e" />
+
