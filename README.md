@@ -11,7 +11,8 @@ Web ini terdiri dari:
 - Contact
 
 ## Struktur File
-```web/
+```
+web/
 ├── index.html
 └── profile.png
-README.md```
+README.md
