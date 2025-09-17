@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Web</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            background-color: #1a4196;
+        }
+
+        .nav-logo {
+            padding: 8px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ffffff;
+            color: black;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            font-size: 25px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Section 1 */
+        /* home */
+        .one {
+            height: 91vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            background: radial-gradient(circle, #000000, #1a4196, #000000);
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+            padding-right: 5%;
+        }
+
+        .one h2.title {
+            font-size: 3rem;
+        }
+
+        .one h1.name {
+            font-size: 5.5rem;
+        }
+
+        .one h3.role {
+            font-size: 1.5rem;
+        }
+
+        /* Section 2 */
+        /* about me */
+        .two {
+            min-height: 100vh;
+            display: flex;
+            padding: 50px 5%;
+            background: white;
+            color: black;
+        }
+
+        .aboutme-text {
+            flex: 1 1 400px;
+            margin-right: 30px;
+        }
+
+        .two h1.aboutme-title {
+            font-size: 5rem;
+            margin-bottom: 20px;
+            background: linear-gradient(120deg, #000000, #261a7e, #3642a9);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .two h2.aboutme-isi {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #000000, #0c0364, #3d31f1);
+            width: fit-content;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        .two p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            margin-bottom: 15px;
+            max-width: 900px;
+        }
+
+        .two ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .two ul li {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+
+        .two img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Section 3 */
+        /* my project */
+        .three {
+            min-height: 25vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 40px 5%;
+            background: radial-gradient(circle, #000000, #1a4196, #000000);
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+        }
+
+        .three h1.project-title {
+            font-size: 5rem;
+            margin-bottom: 20px;
+        }
+
+        .github-link {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 12px 25px;
+            background: white;
+            color: black;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            text-align: center;
+            max-width: 90%;
+        }
+
+        /* Section 4 */
+        /* footer */
+        .four {
+            padding: 40px 5%;
+            background: black;
+            color: white;
+            text-align: center;
+        }
+
+        .four h1.footer-title {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .four h3.footer-isi {
+            font-size: 1rem;
+            color: white;
+            font-weight: normal;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .footer-link {
+            color: #0e76a8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* responsive */
+        @media (max-width: 768px) {
+            .nav-links a {
+                font-size: medium;
+            }
+
+            .one {
+                height: 78vh;
+            }
+
+            .one h1.name {
+                font-size: 2.2rem;
+            }
+
+            .one h2.title {
+                font-size: 1.5rem;
+            }
+
+            .one h3.role {
+                font-size: 0.62rem;
+            }
+
+            .two {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .aboutme-text {
+                margin-right: 0;
+            }
+
+            .two img {
+                max-width: 80%;
+                margin-top: 20px;
+            }
+
+            .three h1.project-title {
+                font-size: 2rem;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 10px;
+            }
+
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-logo">Mifta's Personal Web</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">My Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section 1 -->
+    <section class="one" id="home">
+        <h2 class="title">Hola Everyone!</h2>
+        <h1 class="name">Anas Miftakhul F.</h1>
+        <h3 class="role">Computer Science Student | Junior Network Engineer</h3>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="two" id="about">
+        <div class="aboutme-text">
+            <h1 class="aboutme-title">About Me</h1>
+            <h2 class="aboutme-isi">Anas Miftakhul Falah</h2>
+
+            <p>Umur saya 19 tahun, saat ini saya masih menjalani studi di
+                <b>Universitas Pendidikan Indonesia</b>,
+                jurusan <b><i>Computer Science</i></b>.
+            </p>
+
+            <p>Saya sangat tertarik pada <i><b>computer networks</b>, <b>network security</b></i>, dan
+                <b><i>network infrastructures</i></b>. Saya juga sedang mempelajari:
+            </p>
+
+            <ul>
+                <li><i>Network engineering and administration</li>
+                <li>Configuring and managing network devices (Cisco, MikroTik, etc.)</li>
+                <li>Exploring modern technologies in cloud and virtualization</li>
+                <li>Programming basics (C, C++, Python, and web development)</i></li>
+            </ul>
+
+            <p>Saya orang yang terus bersemangat untuk belajar, serta meningkatkan keterampilan saya di Bidang yang saya
+                tekuni.</p>
+
+            <p>Goal saya adalah menjadi <b><i>Network Engineer</i></b> yang tidak hanya mengerti tentang teori, tapi
+                juga
+                mampu untuk melakukan secara praktikal dan mampu untuk memecahkan suatu masalah, serta mampu untuk
+                memberikan pemahaman kepada orang lain.</p>
+        </div>
+        <div>
+            <img src="profile.png" alt="My Photo">
+        </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="three" id="projects">
+        <h1 class="project-title">My Project</h1>
+        <a href="https://github.com/mistwake/smart-internet-cafe" target="_blank" class="github-link">Smart Internet
+            Cafe Simulation</a>
+        <a href="https://github.com/zicofarry/DBMS-PilahPintar" target="_blank" class="github-link">DBMS Pilah
+            Pintar</a>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="four" id="contact">
+        <h1 class="footer-title">Contact Me</h1>
+        <a href="https://www.linkedin.com/in/anasmifta/" target="_blank" class="footer-link">LinkedIn</a>
+        <h3 class="footer-isi">© 2025 Anas Miftakhul F. All Rights Reserved.</h3>
+    </section>
+</body>
+
+</html>
